@@ -1,0 +1,49 @@
+.nav {
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: var(--divider-line);
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #2e363e;
+  position: relative;
+}
+
+.nav__btn-notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: tomato;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  animation: notificationani 1.5s ease-in-out infinite forwards;
+}
+
+@keyframes notificationani {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.none {
+  animation: none;
+}

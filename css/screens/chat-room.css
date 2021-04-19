@@ -1,0 +1,175 @@
+#chat-room {
+  background-color: #abc1d1;
+  height: 1000vh;
+}
+
+#chat-room .status-bar,
+#chat-room .alt-header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #abc1d1;
+}
+
+#chat-room .status-bar {
+  z-index: 2;
+}
+
+#chat-room .alt-header {
+  z-index: 1;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate3d(-80px, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadein-2 {
+  from {
+    opacity: 0;
+    transform: translate3d(80px, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #92a4b2;
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+  animation: fadein 0.5s linear;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.message__data {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__author,
+.message__time {
+  display: block;
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+.message__author {
+  margin-bottom: 8px;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 12px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+  animation: fadein-2 0.5s linear;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 8px;
+}
+
+.message-row--own .message__data {
+  flex-direction: row-reverse;
+}
+
+.send {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.send .send__column:first-child {
+  width: 10%;
+}
+
+.send__column:last-child > input::placeholder {
+  font-size: 18px;
+  color: var(--gray);
+}
+
+.send .send__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.send i {
+  opacity: 0.4;
+}
+
+.send input {
+  width: 100%;
+  border: var(--divider-line);
+  border-radius: 25px;
+  padding: 12px;
+}
+
+.send__column:last-child > i,
+.send__column:last-child button {
+  position: absolute;
+  right: 55px;
+  top: 5px;
+}
+
+.send__column:last-child button {
+  right: 3px;
+  top: 3px;
+  background-color: var(--yellow);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.send__column button i {
+  opacity: 1;
+}
+
+.send__column button:focus,
+.send__column button:active {
+  outline: none;
+}

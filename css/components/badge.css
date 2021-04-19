@@ -1,0 +1,45 @@
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: tomato;
+}
+
+.nav__btn-notification {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+
+.nav__btn-update {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.user-components__porfile-update {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.user-components__column-newmessage {
+  width: 25px;
+  height: 25px;
+}
+
+.screen-header__icons--cog {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}

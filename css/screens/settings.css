@@ -1,0 +1,23 @@
+.settings__setting {
+  padding: 25px 0px;
+  border-bottom: rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting i {
+  margin-right: 20px;
+  opacity: 0.8;
+}
+
+.settings__setting__column:last-child {
+  opacity: 0.5;
+}
+
+.settings-divider-line {
+  margin: 20px 0px;
+  border: var(--divider-line);
+  opacity: 0.3;
+}

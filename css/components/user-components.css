@@ -1,0 +1,102 @@
+.user-components,
+.user-components__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-components {
+  justify-content: space-between;
+}
+
+.user-components__porfile--xl,
+.user-components__porfile,
+.user-components__porfile--sm {
+  border-radius: 40%;
+  margin-right: 18px;
+}
+
+.user-components__porfile--xl {
+  width: 80px;
+  height: 80px;
+}
+
+.user-components__porfile {
+  width: 70px;
+  height: 70px;
+}
+
+.user-components__porfile--sm {
+  width: 60px;
+  height: 60px;
+}
+
+.user-components__nickname {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.user-components__statemessage {
+  margin-top: 10px;
+  font-size: 15px;
+  color: var(--gray);
+  display: flex;
+}
+
+.user-components__statemessage-number + p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  border-radius: 50%;
+  color: tomato;
+  border: 2px solid tomato;
+}
+
+.user-components__friends-statemessage {
+  margin-top: 5px;
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.user-components__column:last-child {
+  color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-components__time {
+  margin-bottom: 10px;
+}
+
+.user-components__column:first-child {
+  position: relative;
+}
+
+.user-components__text {
+  position: relative;
+}
+
+.user-components__text--me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #391e23;
+  color: white;
+  font-size: 11px;
+  position: absolute;
+  top: 3px;
+}
+
+.user-components__text--me + h4 {
+  padding-left: 25px;
+}
+
+.chating {
+  margin-bottom: 20px;
+}
