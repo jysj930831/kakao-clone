@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat-Room - Choi</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="chat-room">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>서비스 잘 됨</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>12:02</span>
+      </div>
+      <div class="status-bar__column">
+        <span>122%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt fa-lg"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><i class="fas fa-angle-left fa-2x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <span class="alt-header__title">Choi</span>
+      </div>
+      <div class="alt-header__column">
+        <a href="search.html"><i class="fas fa-search fa-2x"></i></a>
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        <sapn>2021. 04. 19 월</sapn>
+      </div>
+      <div class="message-row">
+        <img src="img/porfile.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">Sol-Ah</span>
+          <div class="message__data">
+            <span class="message__bubble">굿모닝-!</span>
+            <span class="message__time">08:10</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__data">
+            <span class="message__bubble">굿모닝-!</span>
+            <span class="message__time">08:15</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="send">
+      <div class="send__column">
+        <i class="far fa-plus-square fa-2x"></i>
+      </div>
+      <div class="send__column">
+        <input type="text" placeholder="메시지를 입력해주세요..." />
+        <i class="far fa-smile fa-2x"></i>
+        <button>
+          <i class="fas fa-arrow-up fa-2x"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="only-mobile">
+      <span>모바일에서만 사용이 가능합니다.</span>
+      <span>화면의 크키를 줄여주세요.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

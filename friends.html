@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChoiTalk - Friends</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>서비스 잘 됨</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>12:02</span>
+      </div>
+      <div class="status-bar__column">
+        <span>122%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt fa-lg"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">친구</h1>
+      <div class="screen-header__icons">
+        <span
+          ><a href="search.html"><i class="fas fa-search fa-lg"></i></a
+        ></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
+        <span class="screen-header__icons--cog badge"></span>
+      </div>
+    </header>
+
+    <a class="screen-friends-link" href="#">
+      <i class="fas fa-info-circle"></i>
+      <span>친구들의 이름을 표시합니다</span>
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="main-screen">
+      <div class="user-components">
+        <div class="user-components__column">
+          <img class="user-components__porfile--xl" src="img/porfile.jpg" />
+          <div class="user-components__text">
+            <h4 class="user-components__nickname">Choi</h4>
+            <h5 class="user-components__statemessage">♬ 코딩 공부중</h5>
+          </div>
+        </div>
+        <div class="user-components__column"></div>
+      </div>
+
+      <div class="screen-friends__birthday">
+        <div class="screen-friends__birthday-header">
+          <span>생일인 친구</span>
+        </div>
+        <div class="user-components screen-friends__birthday-components">
+          <div class="screen-friends__birthday-components__column">
+            <div
+              class="user-components__porfile--sm screen-friends__birthday-components__birthday"
+            >
+              <i class="fas fa-birthday-cake fa-2x"></i>
+            </div>
+            <div class="user-components__text">
+              <h4 class="user-components__text-birthday">
+                친구의 생일을 확인해보세요!
+              </h4>
+            </div>
+          </div>
+          <div class="user-components__column">
+            <div><span>19</span> <i class="fas fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen-friends__channel">
+        <div class="screen-friends__channel-header">
+          <span>채널</span>
+          <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="user-components screen-friends__channel-components">
+          <div class="screen-friends__channel-components__column">
+            <div
+              class="user-components__porfile--sm screen-friends__channel-components__channel"
+            >
+              <span>Ch</span>
+              <i class="fas fa-comment fa-2x"></i>
+            </div>
+            <div class="user-components__text">
+              <h4 class="user-components__text-channel">채널</h4>
+            </div>
+          </div>
+          <div class="user-components__column">
+            <div><span>19</span> <i class="fas fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen-friends__friends">
+        <div class="screen-friends__friends-header">
+          <span>친구</span>
+        </div>
+        <div class="user-components">
+          <div class="user-components__column">
+            <span class="user-components__porfile-update badge"></span>
+            <img class="user-components__porfile--sm" src="img/porfile.jpg" />
+            <div class="user-components__text">
+              <h4 class="user-components__text-channel">Sol-Ah</h4>
+              <h6 class="user-components__friends-statemessage">
+                의사분들보다 바쁨
+              </h6>
+            </div>
+          </div>
+          <div class="user-components__column"></div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn f_nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fas fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn f_nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__btn-notification badge">12</span>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn f_nav__btn">
+          <a class="nav__link" href="search.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn f_nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__btn-update badge"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="splash-screen">
+      <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="only-mobile">
+      <span>모바일에서만 사용이 가능합니다.</span>
+      <span>화면의 크키를 줄여주세요.</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
